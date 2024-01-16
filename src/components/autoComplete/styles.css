@@ -1,0 +1,107 @@
+/* Autocomplete.css */
+
+.autocomplete-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+  padding: 8px 8px 4px 8px;
+  width: 100%;
+  /* max-width: 300px; */
+  border-bottom: 2px solid black;
+}
+
+.chip {
+  color: black;
+  padding: 8px;
+  border-radius: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.highlighted-chip {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.remove-icon {
+  font-size: 18px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.autocomplete-input-container {
+  position: relative;
+  flex-grow: 1;
+}
+
+.autocomplete-input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  min-width: 50px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.autocomplete-options {
+  list-style: none;
+  padding: 8px;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.autocomplete-options li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.highlighted {
+  background-color: #f0f0f0;
+}
+
+.autocomplete-options li:hover {
+  background-color: #f0f0f0;
+}
+
+.no-results {
+  padding: 8px;
+  color: #777;
+}
+
+.option-con {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.option-con img {
+  width: 32px;
+  height: 32px;
+}
+
+.option-con {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.chip-con {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.chip-con img {
+  width: 32px;
+  height: 32px;
+}
